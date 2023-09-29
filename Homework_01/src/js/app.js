@@ -1,4 +1,5 @@
 import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.min.css'
 import '../styles/reset.css'
 
