@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap';
+
+.main {
+  height: 100vh;
+}
+
+.content-container {
+  padding: 50px 0;
+  border-radius: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
