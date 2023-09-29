@@ -1,62 +1,93 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { join, resolve } = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+
+let mode = "development";
+
+if (process.env.NODE_ENV === "production") {
+  mode = "production";
+}
+
 module.exports = {
-  mode: 'development',
+  mode: mode,
   entry: {
-    app_bundle: path.resolve(__dirname, 'src/js/app.js')
+    app_bundle: resolve(__dirname, "src/js/app.js"),
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name]_[contenthash].js',
+    path: resolve(__dirname, "dist"),
+    filename: "[name]_[contenthash].js",
     clean: true,
-    assetModuleFilename: '[name][ext]',
+    assetModuleFilename: "[name][ext]",
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'dist')
+      directory: resolve(__dirname, "dist"),
     },
     port: 3000,
     open: true,
     hot: true,
     compress: true,
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   module: {
     rules: [
       {
-        test:/\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test:/\.js$/,
+        test: /\.scss$/,
+        use: [
+          "style-loader",
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "sass-loader",
+          },
+        ],
+      },
+      {
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource'
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        loader: "file-loader",
+        options: {
+          name: "[name].[hash:6].[ext]",
+          outputPath: "assets/images",
+          publicPath: "assets/images",
+          emitFile: true,
+          esModule: false,
+        },
       }
-    ]
+    ],
   },
   plugins: [
-    new HtmlWebpackPlugin ({
-      title: 'Index',
-      filename: 'index.html',
-      template: 'src/html/index.html',
-      chunks: ['app_bundle'],
+    new FaviconsWebpackPlugin({
+      logo: "src/favicon.ico",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
+    }),
+    new HtmlWebpackPlugin({
+      title: "Home",
+      filename: "index.html",
+      template: "src/html/index.html",
+      chunks: ["app_bundle"],
       minify: {
-        collapseWhitespace: true
-      }
-    })
-  ]
-}
+        collapseWhitespace: true,
+      },
+    }),
+  ],
+};
