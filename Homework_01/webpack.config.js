@@ -13,6 +13,7 @@ module.exports = {
   mode: mode,
   entry: {
     app_bundle: resolve(__dirname, "src/js/app.js"),
+    footer_header_bundle: resolve(__dirname, "src/js/footer_header.js"),
   },
   output: {
     path: resolve(__dirname, "dist"),
@@ -84,6 +85,31 @@ module.exports = {
       title: "Home",
       filename: "index.html",
       template: "src/html/index.html",
+      chunks: ["app_bundle", "footer_header_bundle"],
+      minify: {
+        collapseWhitespace: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      title: "ADS",
+      filename: "ads.html",
+      template: "src/html/ads.html",
+      chunks: ["app_bundle", "footer_header_bundle"],
+      minify: {
+        collapseWhitespace: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      filename: "header.html",
+      template: "src/html/header.html",
+      chunks: ["app_bundle"],
+      minify: {
+        collapseWhitespace: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      filename: "footer.html",
+      template: "src/html/footer.html",
       chunks: ["app_bundle"],
       minify: {
         collapseWhitespace: true,

@@ -1,22 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
 </head>
-<body>
-  <header class="w-100">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="<%= require('../assets/images/ad.png') %>" > 
-        Ad's Board
-      </a>
-      
-      
 
-    </nav>
-  </header>
+<body>
+  <header id="header-placeholder"></header>
+
+  <main class="mt-4">
+    <div class="ms-5 me-5">
+      <form>
+        <div id="search" class="row d-flex align-items-center bg-primary-subtle m-0 rounded-1">
+          <div class="col-lg-5 d-flex align-items-center pt-3 pb-3">
+            <div class="input-group">
+              <span class="input-group-text search-border"><i class="fa fa-search" aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="11 999 345 ads near you">
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-center pt-3 pb-3">
+            <div class="input-group">
+              <span class="input-group-text search-border"><i class="fa fa-map-marker-alt"
+                  aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="Kyiv, Kyiv area">
+            </div>
+          </div>
+
+          <div class="col-lg-2 pt-3 pb-3">
+            <button type="submit" class="btn btn-primary w-100">Search</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="categories" class="mt-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-baby me-3" aria-hidden="true"></i>
+              <div>Children's world</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-house me-3 text-primary" aria-hidden="true"></i>
+              <div>Property</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-car me-3 text-warning " aria-hidden="true"></i>
+              <div>Transport</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-gears me-3 text-danger" aria-hidden="true"></i>
+              <div>Spare parts for cars</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-clipboard-user me-3 text-success" aria-hidden="true"></i>
+              <div>Jobs</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-paw me-3 text-dark-emphasis " aria-hidden="true"></i>
+              <div>Animals</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-couch me-3 text-primary-emphasis" aria-hidden="true"></i>
+              <div>House & garden</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-mobile-alt me-3 text-success " aria-hidden="true"></i>
+              <div>Phones, Tablets & PCs</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-wrench me-3 text-primary " aria-hidden="true"></i>
+              <div>Busines & services</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-shirt me-3 text-danger " aria-hidden="true"></i>
+              <div>Fashion & style</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-bicycle me-3 text-warning " aria-hidden="true"></i>
+              <div>Hobbies, recreation & sports</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-gift me-3 text-primary " aria-hidden="true"></i>
+              <div>Gifts</div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="ads.html" class="btn">
+              <i class="fa fa-rotate me-3 text-warning " aria-hidden="true"></i>
+              <div>Exchange</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <hr class="ms-5 me-5 mt-5 ">
+
+  <footer class="ms-5 me-5" id="footer-placeholder"></footer>
 
 </body>
+
 </html>

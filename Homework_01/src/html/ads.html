@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+
+  <header id="header-placeholder"></header>
+
+  <main class="mt-4">
+    <div class="ms-5 me-5">
+      <form>
+        <div id="search" class="row d-flex align-items-center bg-dark-subtle m-0 rounded-1">
+          <div class="col-lg-4 d-flex align-items-center pt-3 pb-3">
+            <div class="input-group">
+              <span class="input-group-text search-border"><i class="fa fa-search" aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="11 999 345 ads near you" value="wardrobe">
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex align-items-center pt-3 pb-3">
+            <div class="input-group">
+              <span class="input-group-text search-border"><i class="fa fa-map-marker-alt"
+                  aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="Kyiv, Kyiv area" value="Kyiv, Shevchenkovskiy">
+            </div>
+          </div>
+
+          <div class="col-lg-4 pt-3 pb-3">
+            <select id="select_categories" class="form-select">
+              <option value="1">
+                <div>Children's world</div>
+              </option>
+              <option value="2">
+                <div>Property</div>
+              </option>
+              <option value="3">
+                <div>Transport</div>
+              </option>
+              <!-- etc. -->
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <div id="ads" class="mt-5">
+        <!-- some content -->
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer-placeholder"></footer>
+
+</body>
+
+</html>
