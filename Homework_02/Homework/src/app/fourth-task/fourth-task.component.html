@@ -1,0 +1,8 @@
+<h4>Information resources about Bill Gates:</h4>
+<div class="d-flex justify-content-center ">
+  <ul class="list-group">
+    <ng-container *ngFor="let resource of resources">
+      <li class="list-group-item list-group-item-action list-group-item-dark text-center"><a class="text-dark text-decoration-none" [href]="resource.url">{{resource.name}}</a></li>
+    </ng-container>
+  </ul>
+</div>

@@ -1,0 +1,15 @@
+<div class="flex-container bg-dark main">
+  <div class="container row d-flex align-items-center justify-content-between bg-warning content-container" style="width: 90vw; height: auto;">
+      <div class="col-lg-3 d-flex flex-column align-items-center">
+        <img [src]="person.pesron_portrait_url" alt="portrait">
+      </div>
+      <div id="biography" class="col-lg-9 d-flex flex-column align-items-center">
+        <p>{{person.biography}}</p>
+      </div>
+      <div class="col-lg-12 d-flex flex-column align-items-center mt-5">
+
+        <app-fourth-task></app-fourth-task>
+        
+      </div>
+  </div>
+</div>

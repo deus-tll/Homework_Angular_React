@@ -1,0 +1,17 @@
+.flex-container img {
+  border-radius: 20px;
+  height: 250px;
+}
+
+
+@media (max-width: 991px) {
+  #biography {
+    padding-right: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  #biography {
+    padding-right: 3rem;
+  }
+}
