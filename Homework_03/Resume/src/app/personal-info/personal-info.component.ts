@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { PersonalInfo } from '../models/person.model';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-personal-info',
@@ -17,4 +20,22 @@ export class PersonalInfoComponent {
     city: 'Очаків',
     about: "Я - C# розробник-початківець, який шукає роботу на позиції C# Trainee Developer. Хоча у мене немає комерційного досвіду роботи в цій галузі, я швидко навчаюсь і дуже відданий роботі. Раніше я мав справу з невеликими локальними проектами з різних направлень в області .NET, але дуже бажаю попрацювати над реальними і цікавим задачами, що саме головне - у команді. Моя сміливість та мотивація до навчання допоможуть мені вдосконалити свої навички та бути більш корисним на цій посаді. Крім того, завдяки моїй відданості роботі, я можу вчитися достатньо швидко та наполегливо."
   };
+
+  aboutTextSize:number = 14;
+
+  isDangerOrPrimarySubtle:boolean = true;
+
+  toogleBackColor() {
+    this.isDangerOrPrimarySubtle = !this.isDangerOrPrimarySubtle;
+  }
+
+  incrementTextSize() {
+    this.aboutTextSize++;
+  }
+  
+  decrementTextSize() {
+    if (this.aboutTextSize > 0) {
+      this.aboutTextSize--;
+    }
+  }
 }
