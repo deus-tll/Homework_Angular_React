@@ -1,0 +1,13 @@
+<div class="d-flex flex-column block pe-3">
+  <h3 class="text-center">Хард Скілли</h3>
+  <ul *ngFor="let skill of getHardSkills()">
+    <li>{{skill}}</li>
+  </ul>
+</div>
+
+<div class="d-flex flex-column block pe-3">
+  <h3 class="text-center">Софт Скілли</h3>
+  <ul *ngFor="let skill of getSoftSkills()">
+    <li>{{skill}}</li>
+  </ul>
+</div>
