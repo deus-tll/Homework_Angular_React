@@ -1,6 +1,6 @@
 <div class="flex-container bg-dark pt-3">
   <div [ngClass]="isDangerOrPrimarySubtle ? 'bg-danger-subtle' : 'bg-primary-subtle' " class="container row d-flex align-items-center justify-content-between content-container">
-    <div class="d-flex justify-content-center mb-3 ">
+    <div *ngIf="isAdmin" class="d-flex justify-content-center mb-3 ">
       <button (click)="toogleBackColor()"
         class="d-flex btn btn-secondary w-25 justify-content-center align-items-center">
         <div class="me-3 ">Change color to</div>
@@ -29,6 +29,16 @@
           <div class="d-flex justify-content-between w-100">
             <p>Місце:</p>
             <p>{{personalInfo.country | uppercase}}, {{personalInfo.city | uppercase}}</p>
+          </div>
+
+          <div class="d-flex justify-content-between w-100">
+            <p>Очікувана зарплатня:</p>
+            <p>{{personalInfo.expectedSalary | currency}}</p>
+          </div>
+
+          <div class="d-flex justify-content-between w-100">
+            <p>Очікуваний бонус:</p>
+            <p>{{personalInfo.bonus | percent}}</p>
           </div>
 
           <div class="mt-4">

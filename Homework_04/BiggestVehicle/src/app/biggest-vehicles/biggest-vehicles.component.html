@@ -1,0 +1,18 @@
+<div class="flex-container bg-dark main">
+  <div class="container row d-flex align-items-center content-container bg-primary-subtle ">
+    <div class="col-lg-12 d-flex justify-content-center mb-5">
+      <h5 class="me-3 ">Result:</h5>
+      <div [ngSwitch]="selectedVehicle">
+        <div *ngSwitchCase="VehicleEnum.Car">Hummer H1 X3</div>
+        <div *ngSwitchCase="VehicleEnum.Ship">Seawise Giant</div>
+        <div *ngSwitchCase="VehicleEnum.Plane">Antonov An–225 Mriya</div>
+      </div>
+    </div>
+    
+    <div class="col-lg-12 d-flex justify-content-around  ">
+      <button (click)="selectVehicle(VehicleEnum.Car)" class="btn btn-dark">the biggest car</button>
+      <button (click)="selectVehicle(VehicleEnum.Ship)" class="btn btn-dark">the biggest ship</button>
+      <button (click)="selectVehicle(VehicleEnum.Plane)" class="btn btn-dark">the biggest plane</button>
+    </div>
+  </div>
+</div>
