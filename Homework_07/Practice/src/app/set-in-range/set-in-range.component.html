@@ -1,0 +1,53 @@
+<div class="flex-container bg-dark">
+  <div class="container row d-flex align-items-center justify-content-between bg-warning content-container mt-5 mb-5" style="width: 50%;">
+    <div class="d-flex flex-column align-items-center">
+      <div class="d-flex justify-content-center">
+        <div class="input-group d-block">
+          <div class="d-flex justify-content-center">
+            <label class="form-label" for="min">Min</label>
+          </div>
+          <div class="d-flex justify-content-center">
+            <input class="form-control" id="min" type="text" [(ngModel)]="min">
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="input-group d-block">
+          <div class="d-flex justify-content-center">
+            <label class="form-label" for="max">Max</label>
+          </div>
+          <div class="d-flex justify-content-center">
+            <input class="form-control" id="max" type="text" [(ngModel)]="max">
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="input-group d-block">
+          <div class="d-flex justify-content-center">
+            <label class="form-label" for="count">Count</label>
+          </div>
+          <div class="d-flex justify-content-center">
+            <input class="form-control" id="count" type="text" [(ngModel)]="count">
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-4">
+        <button class="btn btn-dark" (click)="generateNumbers()">Generate</button>
+      </div>
+
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-3 w-100">
+      <div class="d-block">
+        <h2>Result:</h2>
+        <div>
+          <ul *ngFor="let number of numbers">
+            <li>{{number}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

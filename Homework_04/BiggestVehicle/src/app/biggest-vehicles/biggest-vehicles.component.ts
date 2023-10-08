@@ -7,7 +7,7 @@ import { VehicleEnum } from '../enums/vehicle-enum';
   styleUrls: ['./biggest-vehicles.component.css']
 })
 export class BiggestVehiclesComponent {
-  VehicleEnum = VehicleEnum
+  VehicleEnum = VehicleEnum;
   selectedVehicle: VehicleEnum = VehicleEnum.Car;
 
   selectVehicle = (vehicle:VehicleEnum) => {
