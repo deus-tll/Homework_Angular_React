@@ -1,5 +1,35 @@
 <div class="flex-container bg-dark">
-  <div class="container row d-flex align-items-center justify-content-between bg-warning content-container mt-5 mb-5" style="width: 50%;">
-    
+  <div class="container row d-flex align-items-center justify-content-between bg-warning content-container mt-5 mb-5"
+    style="width: 50%;">
+    <div class="d-flex flex-column align-items-center">
+      <div class="d-flex justify-content-end w-100">
+        <button class="btn btn-dark" (click)="replay()">Replay</button>
+      </div>
+      <div class="block p-3 mb-3 w-100">
+        <div class="d-flex justify-content-around w-100">
+          <h5>User's score: {{userDiceResult}}</h5>
+          <h5>Computer's score: {{computerDiceResult}}</h5>
+        </div>
+
+        <div *ngIf="currentDice != null" class="d-block mt-5">
+          <h6 class="text-center">The {{whoRolled()}} rolled the dice and got:</h6>
+          <div class="d-flex justify-content-center mt-3 ">
+            <div class="d-flex justify-content-around w-50">
+              <div class="dice d-flex align-items-center justify-content-center ">
+                <h1>{{currentDice.firstDice}}</h1>
+              </div>
+              <div class="dice d-flex align-items-center justify-content-center ">
+                <h1>{{currentDice.secondDice}}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-around w-100 mt-5 ">
+          <button class="btn btn-success" (click)="rollDice()" [disabled]="isRollDisabled">Roll</button>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>

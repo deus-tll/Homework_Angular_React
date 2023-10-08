@@ -10,11 +10,13 @@ import { HeadTails } from '../enums/head-or-tails.enum';
 export class HeadsOrTailsComponent {
   HeadTails = HeadTails;
   choice: HeadTails = HeadTails.Head;
+  result: string = '';
 
-  constructor(private randomApiService: RandomApiService) {}
+  constructor(private randomApiService: RandomApiService) { }
 
-  choose = (choice:HeadTails) => {
+  choose = (choice: HeadTails) => {
     this.choice = choice;
+    this.result = '';
   };
 
   getYourChoice = () => {
@@ -22,6 +24,20 @@ export class HeadsOrTailsComponent {
   }
 
   generate = () => {
-    
+    this.randomApiService.generateNumbers(0, 1, 1).subscribe(
+      (response) => {
+        let res = response.result.random.data[0];
+
+        if (this.choice === res) {
+          this.result = 'Won';
+        }
+        else {
+          this.result = 'Lost';
+        }
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   }
 }
