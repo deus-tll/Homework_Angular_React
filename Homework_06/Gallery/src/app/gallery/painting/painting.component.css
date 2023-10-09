@@ -1,0 +1,15 @@
+.active-painting {
+  padding: 12px 6px;
+}
+
+.active-painting > div {
+  border-radius: 20px;
+  height: 600px;
+  width: auto;
+}
+
+.active-painting > div > img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}

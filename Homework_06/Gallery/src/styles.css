@@ -1,0 +1,41 @@
+.main {
+  height: 100vh;
+}
+
+.content-container {
+  padding: 50px 0;
+  border-radius: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  border: solid 1px whitesmoke;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+
+.painting-block {
+  padding: 12px 6px;
+}
+
+.painting-block > p {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.painting-block > div {
+  border-radius: 20px;
+  height: 200px;
+  width: 100%;
+}
+
+.painting-block > div > img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
