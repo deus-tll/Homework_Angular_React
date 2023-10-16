@@ -1,0 +1,15 @@
+.recipe-photo {
+  padding: 12px 6px;
+}
+
+.recipe-photo > div {
+  border-radius: 20px;
+  height: 600px;
+  width: auto;
+}
+
+.recipe-photo > div > img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
