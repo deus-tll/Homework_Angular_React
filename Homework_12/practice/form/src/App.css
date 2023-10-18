@@ -1,0 +1,25 @@
+.main {
+  height: 100vh;
+}
+
+.content-container {
+  padding: 50px 0;
+  border-radius: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  border: solid 1px whitesmoke;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.error {
+  font-size: 9.5pt;
+  color: red;
+}
