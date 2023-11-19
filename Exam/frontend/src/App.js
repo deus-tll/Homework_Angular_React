@@ -1,11 +1,11 @@
 import './App.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {RootLayout} from "./components/routing/RootLayout";
-import {Home} from "./components/Pages/Home/Home";
-import {Ratings} from "./components/Pages/Ratings/Ratings";
-import {BookDetails} from "./components/Pages/BookDetails/BookDetails";
-import {ReadBook} from "./components/Pages/BookDetails/ReadBook";
-import {AddBook} from "./components/Pages/AddBook/AddBook";
+import {Home} from "./components/pages/Home/Home";
+import {Ratings} from "./components/pages/Ratings/Ratings";
+import {BookDetails} from "./components/pages/BookDetails/BookDetails";
+import {ReadBook} from "./components/pages/BookDetails/ReadBook";
+import {AddBook} from "./components/pages/AddBook/AddBook";
 import {Provider} from "react-redux";
 import store from "./redux/store";
 
