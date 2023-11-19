@@ -15,7 +15,7 @@ export async function createBooksDataFile(booksDataFilePath) {
         await fs.writeFile(booksDataFilePath, '[]');
     }
     catch (error) {
-        console.error('Error creating JSON file:', error);
+        console.error('Помилка при створенні JSON файлу: ', error);
     }
 }
 
