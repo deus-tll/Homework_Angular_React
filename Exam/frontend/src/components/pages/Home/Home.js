@@ -101,12 +101,14 @@ export const Home = () => {
 
           <Modal isOpen={deleteConfirmation !== null} onClose={handleCancelDelete}>
             <p>Are you sure you want to delete this book?</p>
-            <button className="btn btn-danger" onClick={handleConfirmDelete}>
-              Yes
-            </button>
-            <button className="btn btn-secondary" onClick={handleCancelDelete}>
-              No
-            </button>
+            <div className="d-flex justify-content-around align-items-center">
+              <button className="btn btn-danger" onClick={handleConfirmDelete}>
+                Yes
+              </button>
+              <button className="btn btn-secondary" onClick={handleCancelDelete}>
+                No
+              </button>
+            </div>
           </Modal>
         </div>
       </div>
