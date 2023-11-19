@@ -1,0 +1,146 @@
+[
+  {
+    "id": "9ef16949-fe42-4bb4-a42d-9acc9684255c",
+    "bookTitle": "The Conspiracy against the Human Race",
+    "author": "Thomas Ligotti",
+    "genre": "Non-fiction",
+    "publicationYear": "2010",
+    "rating": "2.7",
+    "textFilePath": "D:\\projects\\academic-projects\\frontend\\angular_react\\Homework_Angular_React\\Exam\\backend\\data\\books\\9ef16949-fe42-4bb4-a42d-9acc9684255c.txt",
+    "reviews": [
+      {
+        "email": "some_email_1@gmail.com",
+        "text": "review 1",
+        "rating": 4
+      },
+      {
+        "email": "some_email_2@gmail.com",
+        "text": "review 2",
+        "rating": 3
+      },
+      {
+        "email": "some_email_3@gmail.com",
+        "text": "review 3",
+        "rating": 5
+      },
+      {
+        "email": "some_email_4@gmail.com",
+        "text": "review 4",
+        "rating": 2
+      },
+      {
+        "email": "some_email_5@gmail.com",
+        "text": "review 5",
+        "rating": 2
+      },
+      {
+        "email": "some_email_6@gmail.com",
+        "text": "review 6",
+        "rating": 1
+      },
+      {
+        "email": "some_email_7@gmail.com",
+        "text": "review 7",
+        "rating": 2
+      }
+    ]
+  },
+  {
+    "id": "2482ef42-da3b-4ec7-8d47-45719d2f78ff",
+    "bookTitle": "Title 2",
+    "author": "Author 5",
+    "genre": "Genre 3",
+    "publicationYear": "2021",
+    "rating": "3.0",
+    "textFilePath": "D:\\projects\\academic-projects\\frontend\\angular_react\\Homework_Angular_React\\Exam\\backend\\data\\books\\2482ef42-da3b-4ec7-8d47-45719d2f78ff.txt",
+    "textFile": "undefined",
+    "reviews": [
+      {
+        "email": "my_email_1@gmail.com",
+        "text": "dfvkjbdfkvk bkd vkdjhf bvkdf",
+        "rating": 5
+      },
+      {
+        "email": "my_email_2@gmail.com",
+        "text": "ononoic",
+        "rating": 1
+      }
+    ]
+  },
+  {
+    "id": "1a9e1bcf-327b-49ec-ae0e-7edca08ec14e",
+    "bookTitle": "Title 7",
+    "author": "Author 8",
+    "genre": "Genre 3",
+    "publicationYear": "2014",
+    "rating": "3.0",
+    "textFilePath": "D:\\projects\\academic-projects\\frontend\\angular_react\\Homework_Angular_React\\Exam\\backend\\data\\books\\1a9e1bcf-327b-49ec-ae0e-7edca08ec14e.txt",
+    "textFile": "undefined",
+    "reviews": [
+      {
+        "email": "my_email_1@gmail.com",
+        "text": "oicneocnoclkvx",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "id": "315bc329-bc32-4cb4-a22b-68525d51d72e",
+    "bookTitle": "Title 1",
+    "author": "Author 1",
+    "genre": "Genre 1",
+    "publicationYear": "2004",
+    "rating": "2.0",
+    "textFilePath": "D:\\projects\\academic-projects\\frontend\\angular_react\\Homework_Angular_React\\Exam\\backend\\data\\books\\315bc329-bc32-4cb4-a22b-68525d51d72e.txt",
+    "reviews": [
+      {
+        "email": "email_1@gmail.com",
+        "text": "vvdfbtynty",
+        "rating": 2
+      }
+    ]
+  },
+  {
+    "id": "ce840cab-ddb5-49b7-a5c0-f5cde1b38110",
+    "bookTitle": "Title 1",
+    "author": "Author 1",
+    "genre": "Genre 1",
+    "publicationYear": "2004",
+    "rating": "4.0",
+    "textFilePath": "D:\\projects\\academic-projects\\frontend\\angular_react\\Homework_Angular_React\\Exam\\backend\\data\\books\\ce840cab-ddb5-49b7-a5c0-f5cde1b38110.txt"
+  },
+  {
+    "id": "bf8c00e3-180d-4928-abcf-f62946354575",
+    "bookTitle": "Title 1",
+    "author": "Author 1",
+    "genre": "Genre 1",
+    "publicationYear": "2004",
+    "rating": "3.0",
+    "textFilePath": "D:\\projects\\academic-projects\\frontend\\angular_react\\Homework_Angular_React\\Exam\\backend\\data\\books\\bf8c00e3-180d-4928-abcf-f62946354575.txt",
+    "reviews": [
+      {
+        "email": "email_1@gmail.com",
+        "text": "fvldfvov",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "id": "b87cd5d0-c421-4414-9153-c8b870577741",
+    "bookTitle": "Title 1",
+    "author": "Author 1",
+    "genre": "Genre 1",
+    "publicationYear": "2004",
+    "rating": null,
+    "textFilePath": "D:\\projects\\academic-projects\\frontend\\angular_react\\Homework_Angular_React\\Exam\\backend\\data\\books\\b87cd5d0-c421-4414-9153-c8b870577741.txt"
+  },
+  {
+    "id": "dd0c2688-1c90-416c-926e-ea5978e56a23",
+    "bookTitle": "Title 1",
+    "author": "Author 1",
+    "genre": "Genre 1",
+    "publicationYear": "2004",
+    "rating": null,
+    "textFilePath": "D:\\projects\\academic-projects\\frontend\\angular_react\\Homework_Angular_React\\Exam\\backend\\data\\books\\dd0c2688-1c90-416c-926e-ea5978e56a23.txt"
+  }
+]
